@@ -53,7 +53,7 @@ export default function CoworkingPage({ id }: CoworkingPageProps): ReactElement 
                     </div>
                     <div className="h-full w-[1px] bg-border" />
                     <div className="w-1/2 flex justify-center items-center">
-                        <CoworkingCard picture="https://tech.takea.place/images/3/1.webp" />
+                        <CoworkingCard isLoaded={false} picture="https://tech.takea.place/images/3/1.webp" />
                     </div>
                 </div>
                 <div className="h-[1px] w-full bg-border" />
