@@ -6,7 +6,7 @@ import CoworkingList from "../home/CoworkingList";
 import Link from "next/link";
 
 interface CoworkingPageProps {
-    id: number;
+    id: string | string[];
 }
 
 export default function CoworkingPage({ id }: CoworkingPageProps): ReactElement {
