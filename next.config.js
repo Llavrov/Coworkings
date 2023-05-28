@@ -9,7 +9,6 @@ module.exports = {
         dangerouslyAllowSVG: true,
     },
     env: {
-        PUBLIC_URL: 'https://llavrov.github.io/Coworkings/',
+        PUBLIC_URL: 'http://coworking-diplom.ru/',
     },
-    basePath: '/Coworkings',
 }
