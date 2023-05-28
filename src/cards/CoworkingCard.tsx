@@ -6,10 +6,9 @@ export interface CoworkingCardProps {
     title?: string;
     price?: number;
     address?: string;
-    picture: string;
-    onClick: () => void;
-    stop_price: number;
-    review_rate: number;
+    picture?: string;
+    stop_price?: number;
+    review_rate?: number;
 }
 
 export default function CoworkingCard({
