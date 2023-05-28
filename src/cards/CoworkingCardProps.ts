@@ -48,7 +48,7 @@ interface ReviewTag {
     type: string;
 }
 
-interface Place {
+export interface Place {
     book_types: string[];
     description: string;
     id: number;
