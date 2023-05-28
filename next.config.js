@@ -8,5 +8,8 @@ module.exports = {
         ],
         dangerouslyAllowSVG: true,
     },
+    env: {
+        PUBLIC_URL: 'https://llavrov.github.io/Coworkings/',
+    },
     basePath: '/Coworkings',
 }
