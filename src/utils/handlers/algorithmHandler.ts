@@ -13,7 +13,7 @@ export function algorithmHandler(data: DataProps, algorithm: string) {
     })
         .then(res => {
             if (res.ok) {
-                return res.json() as {success: any, time: any};
+                return res.json();
             }
 
             return { error: true };
