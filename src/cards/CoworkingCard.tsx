@@ -3,8 +3,9 @@ import Image from "next/image";
 import CoworkingIcon, {Icon} from "./CoworkingIcon";
 import 'react-loading-skeleton/dist/skeleton.css'
 import Skeleton from "react-loading-skeleton";
+import {CoworkingCardProps} from "./CoworkingCardProps";
 
-export interface CoworkingCardProps {
+export interface ICoworkingCardProps {
     info: CoworkingCardProps;
     isLoaded: boolean;
 }
@@ -12,7 +13,7 @@ export interface CoworkingCardProps {
 export default function CoworkingCard({
     info,
     isLoaded,
-}: CoworkingCardProps): ReactElement {
+}: ICoworkingCardProps): ReactElement {
     const { photos, places, address, review_rate } = info;
     const { name, stop_price, price } = places[0];
 

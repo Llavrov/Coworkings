@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {type ReactElement, useEffect} from 'react';
 
 interface CoworkingSelectorProps {
