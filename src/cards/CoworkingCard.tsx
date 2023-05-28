@@ -24,7 +24,7 @@ export default function CoworkingCard({
             <Image
                 className="rounded-4"
                 style={{ width: '100%', height: '245px', objectPosition: 'top', objectFit: 'cover' }}
-                src={`${process.env.PUBLIC_URL}${picture}`}
+                src={picture}
                 alt={picture}
                 priority={false}
                 width={353}
