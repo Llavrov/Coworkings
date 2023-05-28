@@ -8,4 +8,5 @@ module.exports = {
         ],
         dangerouslyAllowSVG: true,
     },
+    basePath: '/Coworkings',
 }

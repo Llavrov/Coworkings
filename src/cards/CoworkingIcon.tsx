@@ -4,17 +4,19 @@ import { type ReactElement } from 'react';
 interface CoworkingIconProps {
     icon: Icon;
     edgeLength?: number;
+    className?: string;
 }
 
 export enum Icon {
     metro = '/metro.svg',
     star = '/star.svg',
     arrow = '/arrow.svg',
+    arrowLeft = '/arrow-left.svg',
 }
 
-export default function CoworkingIcon({ icon, edgeLength = 24 }: CoworkingIconProps): ReactElement {
+export default function CoworkingIcon({ icon, edgeLength = 24, className }: CoworkingIconProps): ReactElement {
     return (
-        <div style={{ height: `${edgeLength}px`, width: `${edgeLength}px` }}>
+        <div className={className} style={{ height: `${edgeLength}px`, width: `${edgeLength}px` }}>
             <Image src={icon} width={edgeLength} height={edgeLength} alt={`Coworking icon ${icon}`} />
         </div>
     );

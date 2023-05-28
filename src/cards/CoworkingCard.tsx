@@ -27,6 +27,7 @@ export default function CoworkingCard({
                 style={{ width: '100%', height: '245px', objectPosition: 'top', objectFit: 'cover' }}
                 src={picture}
                 alt={picture}
+                priority={false}
                 width={353}
                 height={245}
             />
