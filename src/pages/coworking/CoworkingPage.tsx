@@ -1,6 +1,6 @@
-import {type ReactElement, useState} from 'react';
+import { type ReactElement, useState } from 'react';
 import CoworkingCard from '../../cards/CoworkingCard';
-import CoworkingIcon, {Icon} from "../../cards/CoworkingIcon";
+import CoworkingIcon, { Icon } from "../../cards/CoworkingIcon";
 import CoworkingSelector from "./CoworkingSelector";
 import CoworkingList from "../home/CoworkingList";
 import Link from "next/link";
@@ -12,7 +12,7 @@ interface CoworkingPageProps {
 export default function CoworkingPage({ id }: CoworkingPageProps): ReactElement {
     const [algorithm, setAlgorithm] = useState('Длинное название алгоритма');
     const [isOpen, setOpen] = useState(false);
-    const [algorithmTime, setAlgorithmTime] = useState('4мс');
+    const [algorithmTime, _setAlgorithmTime] = useState('4мс');
 
     async function handleAlgorithm() {
         await fetch('http://46.229.212.119:8000/cluster/', {
@@ -85,7 +85,7 @@ export default function CoworkingPage({ id }: CoworkingPageProps): ReactElement 
                         <p className="m-0 text-white">Выполнить алгоритм</p>
                     </div>
                     <h2 className="text-heading-l my-8 ">Результат работы алгоритма</h2>
-                    <CoworkingList list={[1, 2, 3]} />
+                    <CoworkingList list={[1, 2, 3]} isLoaded={false} />
                 </div>
                 <div>
                     <h2 className="text-heading-l mb-4 mt-8 ">Время работы алгоритма</h2>

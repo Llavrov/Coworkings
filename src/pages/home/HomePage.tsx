@@ -9,7 +9,7 @@ export default function HomePage(): ReactElement {
                 <h1 className="text-heading-xxl m-0 pb-10">
                     Выберите коворкинг
                 </h1>
-                <CoworkingList list={[1, 2, 3]} />
+                <CoworkingList list={[1, 2, 3]} isLoaded={true} />
             </div>
         </div>
     );
