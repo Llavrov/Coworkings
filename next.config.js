@@ -11,4 +11,5 @@ module.exports = {
     env: {
         PUBLIC_URL: 'https://llavrov.github.io/Coworkings/',
     },
+    basePath: '/Coworkings',
 }
