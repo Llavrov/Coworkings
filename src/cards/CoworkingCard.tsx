@@ -14,8 +14,8 @@ export default function CoworkingCard({
     info,
     isLoaded,
 }: ICoworkingCardProps): ReactElement {
-    const { photos, places, address, review_rate } = info;
-    const { name, stop_price, price } = places[0];
+    const { name, photos, places, address, review_rate } = info;
+    const { stop_price, price } = places[0];
 
     return (
         <div className="w-[353px] flex flex-col justify-between rounded-4 p-2 overflow-hidden cursor-pointer active:shadow-primary">
@@ -40,7 +40,7 @@ export default function CoworkingCard({
                                 <CoworkingIcon icon={Icon.metro} edgeLength={16} />
                                 <p className="m-0 text-text-sm">{address}</p>
                             </div>
-                            <p className="m-0"><span className="text-text-sm">от {stop_price} ₽</span>/день</p>
+                            {stop_price && (<p className="m-0"><span className="text-text-sm">от {stop_price} ₽</span>/день</p>)}
                         </div>
                         <div className="flex gap-2 items-center">
                             <CoworkingIcon icon={Icon.star} edgeLength={16} />
